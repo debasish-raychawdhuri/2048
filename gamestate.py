@@ -107,6 +107,3 @@ class GameState:
             index = possible_indexes[pos]
             v = int(math.ceil(random.random()*2))*2
             self.set_value(index, v)
-
-
-state = GameState()
