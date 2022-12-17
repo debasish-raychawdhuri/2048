@@ -105,7 +105,8 @@ class GameState:
                     possible_indexes.append(current_index)
             pos = int(math.floor(random.random()*len(possible_indexes)))
             index = possible_indexes[pos]
-            self.set_value(index, 2)
+            v = int(math.ceil(random.random()*2))*2
+            self.set_value(index, v)
 
 
 state = GameState()
